@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="slider.css">
+    <title>Latin music</title>
+    <link href="./css/bootstrap-material-design.min.css" rel="stylesheet" />
+    <link href="./css/css.css" rel="stylesheet" />
+    <link href="./css/estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous" />
+
+</head>
+<style>
+    body {
+        background: #000;
+    }
+</style>
+
+<body>
+
+    <div id="particles-js"></div>
+    <div class="container">
+        <!--
+        <div class="contenedor-menu">
+
+            <ul class="menu">
+
+                <li><a href="#" class="btn-menu"> <i class="iconos izquierda fas fa-music"></i><strong> Emisoras
+                        </strong><i class="iconos derecha fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">
+                                <option value="0">Radio 1</option>
+                            </a></li>
+                        <li><a href="#">
+                                <option value="1">Vallenato ventiao</option>
+                            </a></li>
+                        <li><a href="#">
+                                <option value="2">El sol</option>
+                            </a></li>
+                        <li><a href="#">
+                                <option value="3">Latina Estereo</option>
+                            </a></li>
+                        <li><a href="#">
+                                <option value="4">Enlace 88.0 FM</option>
+                            </a></li>
+                        <li><a href="#">
+                                <option value="5">La Z Urbana</option>
+                            </a></li>
+                        <li><a href="#">
+                                <option value="5">Besame</option>
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>-->
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./img/gif electronica.gif" alt="" width="auto" height="auto">
+            <h3>
+                <p style="color:green;"><strong>Latin Music ©</strong></p>
+            </h3>
+            <br>
+            <h4>
+                <p style="color:white"><em>“La música es para el alma lo que las palabras son para la mente.” </em>
+                    <p style="color:white"><em>Modest Mouse</em>
+
+            </h4>
+        </div>
+
+
+        <div class="row text-center">
+            <div class="col">
+                <!--col-columna-->
+                <button type="button" class="btn btn-primary" id="play">
+                    <!--sacado de buttoms de bootstrap-->
+                    <i class="fa fa-play"></i>
+                </button>
+            </div>
+            <select name="radios" id="radios">
+                <option value="0">Radio 1</option>
+                <option value="1">El sol</option>
+                <option value="2">Latina Estereo</option>
+                <option value="3">La x electronica</option>
+                <option value="4">La Z Urbana</option>
+                <option value="5">Estrella Estereo</option>
+                <option value="5">Radio Cristal</option>
+                <option value="5">Blu Radio</option>
+                <option value="5">Radio tiempo</option>
+                <option value="5">Besame</option>
+            </select>
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="pausa">
+                    <i class='fas fa-pause'></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="social">
+            <ul>
+                
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://build.phonegap.com/apps/3653996/install/yq-E2tu1ZBic7mmQF8BG"
+                        class="icon icon-facebook2" target="blank"></a></li>
+                <li><a href="mailto:?subject=LatinMusic app?&body=https://build.phonegap.com/apps/3653996/install/yq-E2tu1ZBic7mmQF8BG"
+                        class="icon icon-envelope" target="blank"></a></li>
+                <li><a href="http://twitter.com/intent/tweet?text=LatinMusic app &url=https://build.phonegap.com/apps/3653996/install/yq-E2tu1ZBic7mmQF8BG" class="icon icon icon-twitter" target="blank"></a></li>
+                <li><a href="https://api.whatsapp.com/send?text=LatinMusic app%C2%A0https://build.phonegap.com/apps/3653996/install/yq-E2tu1ZBic7mmQF8BG" class="icon icon-whatsapp" target="blank"></a></li>
+            </ul>
+
+        </div>
+
+        <!--crear una fila-->
+
+        <div class="row text-center">
+
+            <!--
+        <div class="col">
+            <button type="button" class="btn btn-primary" id="volumemenos">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div> -->
+            <div class="col">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="custom-range" id="myRange">
+                </div>
+            </div>
+
+        </div>
+        <div class="py-1 text-center">
+            <!--py lo pone vertical, px-->
+            <img class="d-block mx-auto mb-4" src="./img/imagen.jpg" alt="" width="100%" height="180" />
+            <!--d-block para mostrar la imagen-->
+        </div>
+        <div class="footer">
+            <p>
+                <h5>Santiago Cadavid, Kelly Gómez & Victor Mora 2019 ©</h5>
+            </p>
+        </div>
+
+    </div>
+
+    <audio id="emisora">
+        <source src="http://198.27.68.65:8296/stream" type="audio/mpeg" />
+        Su buscador no soporta este audio html5.
+    </audio>
+
+    <!--llamado al javascript-->
+    <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/popper.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-material-design.js"></script>
+    <script type="text/javascript" src="./js/fastclick.js"></script>
+    <script type="text/javascript" src="./js/gestures.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+
+
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="alto.js"></script>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

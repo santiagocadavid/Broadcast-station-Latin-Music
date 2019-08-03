@@ -1,0 +1,24 @@
+[
+
+    {"nombre": "Vallenato", "canales": [
+        {"nombre": "Radio uno", "url": "http://20823.live.streamtheworld.com/RADIO_1_MED_SC?DIST=TuneIn&amp;TGT=TuneIn&amp;maxServers=2&amp;ua=RadioTime&amp;ttag=RadioTime"},
+        {"nombre": "Vallenato ventiao", "url": "http://20823.live.streamtheworld.com/RADIO_1_MED_SC?DIST=TuneIn&amp;TGT=TuneIn&amp;maxServers=2&amp;ua=RadioTime&amp;ttag=RadioTime"}
+        
+    ]},
+
+    {"nombre": "Salsa", "canales": [
+        {"nombre": "El sol", "url": "http://20823.live.streamtheworld.com/EL_SOL_MED_SC?DIST=TuneIn&amp;TGT=TuneIn&amp;maxServers=2&amp;ua=RadioTime&amp;ttag=RadioTime"},
+        {"nombre": "Latina Stereo", "url": "http://198.27.68.65:8296/stream"}
+    ]},
+
+    {"nombre": "Urbana", "canales": [
+        {"nombre": "Enlace 88.0 FM", "url": "http://redpulsohd-server.info:9208"},
+        {"nombre": "La Z Urbana", "url": "http://65.60.45.74:8072/"}
+    ]},
+    
+    {"nombre": "POP", "canales": [
+        {"nombre": "Besame", "url": "http://17643.live.streamtheworld.com:3690/BESAME_NACIONAL_SC?DIST=TuneIn&amp;TGT=TuneIn&amp;maxServers=2&amp;ua=RadioTime&amp;ttag=RadioTime"},
+        {"nombre": "Radio tiempo", "url": "https://www.radiotiempo.co/"}
+    ]}
+
+]
